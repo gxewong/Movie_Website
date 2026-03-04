@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Before Sunset</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Movies Details/Before Sunset/🎥 BEFORE SUNSET (2004)  Full Movie Trailer in Full HD  1080p.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Before Sunset</div>
+                    <div class="movie-info">2004 ‧ Romance/Indie film</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.netflix.com/title/60036229" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>1hr 20min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>Nine years later, Jesse travels across Europe giving readings from a book he wrote about the night he spent in Vienna with Celine. 
+                        After his reading in Paris, Celine finds him, and they spend part of the day together before Jesse has to again leave for a flight. 
+                        They are both in relationships now, and Jesse has a son, but as their strong feelings for each other start to return, both confess a longing for more.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../Movies Details/Before Sunset/overview.jpg">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Richard_Linklater">Richard Linklater</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Story By:</h3>
+                <p>Richard Linklater</p>
+                <p><a href="https://en.wikipedia.org/wiki/Kim_Krizan">Kim Krizan</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Before Sunset/Ethan.avif" alt="Ethan Hawke">
+                            <p><b>Jesse</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Ethan_Hawke">Ethan Hawke</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Before Sunset/Julie.avif" alt="Julie Delpy">
+                            <p><b>Céline</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Julie_Delpy">Julie Delpy</a></p>
+                        </div>
+                        
+                        <div class="cast-member">
+                            <img src="../Movies Details/Before Sunset/Vernon.avif" alt="Vernon Dobtcheff">
+                            <p><b>Bookstore Manager</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Vernon_Dobtcheff">Vernon Dobtcheff</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Before Sunset/Diabolo.avif" alt="Diabolo ">
+                            <p><b>Philippe</b></p>
+                            <p>By Diabolo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Castle_Rock_Entertainment">Castle Rock Entertainment</a></p>
+                <p>Detour Filmproduction</p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                        5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

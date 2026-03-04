@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AuraTheatre - Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Coding/css/Header.css">
+        <link rel="stylesheet" href="../Coding/css/Footer.css">
+        <link rel="stylesheet" href="../Coding/css/home.css">
+    </head>
+
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../Coding/image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../Coding/image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="cartoon.html">Cartoon</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../Coding/image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <!--Page content -->
+        <main>
+
+            <h1>Recommended Movies</h1>
+            
+            <!--mainslideshow-->
+            <div class="slideshow-container">
+
+                <!-- The Rated on IMDb -->
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on IMDb</h3>
+                        <p>Star Wars: Episode V The Empire Strikes Back (9.1/10)</p>
+                    </div>
+                <img src="../Coding/image/movies img/starwars.jpg" alt="Star Wars: Episode VII: The Force Awakens" onclick="goToMovie('../Coding/media details/Movies HTML/lordofrings.html')">
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on IMDb</h3>
+                        <p>The First Slam Dunk (9.0/10)</p>
+                    </div>
+                <img src="../Coding/image/anime img/dunk.webp" alt="The First Slam Dunk" onclick="goToMovie('../Coding/media details/Anime HTML/dunk.html')">
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on IMDb</h3>
+                        <p>Coco (8.4/10)</p>
+                    </div>
+                <img src="../Coding/image/cartoon img/coco.jpg" alt="Coco" onclick="goToMovie('../Coding/media details/Cartoon HTML/coco.html')">
+                </div>
+
+                <!-- The Rated on Rotten Tomatoes -->
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Rotten Tomatoes</h3>
+                        <p>Your Name (98%)</p>
+                    </div>
+                <img src="../Coding/image/anime img/yrname.jpg" alt="Your Name" onclick="goToMovie('../Coding/media details/Anime HTML/yourname.html')">
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Rotten Tomatoes</h3>
+                        <p>zootopia2 (97%)</p>
+                    </div>
+                <img src="../Coding/image/cartoon img/zootopia.jpg" alt="zootopia2" onclick="goToMovie('../Coding/media details/Cartoon HTML/zootopia2.html')">
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Rotten Tomatoes</h3>
+                        <p>coco (97%)</p>
+                    </div>
+                <img src="../Coding/image/cartoon img/coco.jpg" alt="Coco" onclick="goToMovie('../Coding/media details/Cartoon HTML/coco.html')">
+                </div>
+
+                <!-- The Rated on Letterboxd -->
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Letterboxd</h3>
+                        <p>Interstellar (4.4/5)</p>
+                    </div>
+                <img src="../Coding/image/movies img/interstella.webp" alt="Interstellar" onclick="goToMovie('../Coding/media details/Movies HTML/interstella.html')">
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Letterboxd</h3>
+                        <p>Star Wars: Episode VII: The Force Awakens (4.4/5)</p>
+                    </div>
+                <img src="../Coding/image/movies img/starwars.jpg" onclick="goToMovie('../Coding/media details/Movies HTML/starwars.html')">
+                </div>
+
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Letterboxd</h3>
+                        <p>The Wind Rises (4.1/5)</p>
+                    </div>
+                <img src="../Coding/image/anime img/windrises.jpg" alt="The Wind Rises" onclick="goToMovie('../Coding/media details/Anime HTML/thewindrises.html')">
+                </div>
+
+                <!-- Top Rated on Movies -->
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Movies</h3>
+                        <p>Star Wars: Episode VII: The Force Awakens</p>
+                    </div>
+                <img src="../Coding/image/movies img/starwars.jpg" onclick="goToMovie('../Coding/media details/Movies HTML/starwars.html')">
+                </div>
+
+                <!-- Top Rated on Cartoon -->
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Cartoon</h3>
+                        <p>COCO</p>
+                    </div>
+                <img src="../Coding/image/cartoon img/coco.jpg" onclick="goToMovie('../Coding/media details/Cartoon HTML/coco.html')">
+                </div>
+
+                <!-- Top Rated on Anime -->
+                <div class="slide fade">
+                    <div class="slide-text-wrapper">
+                        <h3>Top Rated on Anime</h3>
+                        <p>YOUR NAME</p>
+                    </div>
+                <img src="../Coding/image/anime img/yrname.jpg" onclick="goToMovie('../Coding/media details/Anime HTML/yourname.html')">
+                </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="manualSlide(-1)">&#10094;</a>
+                <a class="next" onclick="manualSlide(1)">&#10095;</a>
+
+            </div>
+
+            <section>
+            <div class="media-container">
+                <h2>Movies</h2>
+
+                <div class="media-wrapper">
+                    <button class="media-btn left-btn" onclick="scrollCarousel(this, -1)">&#10094;</button>
+                    
+                    <div class="media-row">
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/lofver.avif" alt="The Lord of the Rings" onclick="goToMovie('../Coding/media details/Movies HTML/lordofrings.html')">
+                            <a href="../Coding/media details/Movies HTML/lordofrings.html">The Lord of the Rings: The Return of the King</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/starwarsver.avif" alt="Star Wars" onclick="goToMovie('../Coding/media details/Movies HTML/starwars.html')">
+                            <a href="../Coding/media details/Movies HTML/starwars.html">Star Wars: Episode VII: The Force Awakens</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/sunsetver.avif" alt="Before Sunset" onclick="goToMovie('../Coding/media details/Movies HTML/sunset.html')">
+                            <a href="../Coding/media details/Movies HTML/sunset.html">Before Sunset</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/trumanver.avif" alt="The Truman Show" onclick="goToMovie('../Coding/media details/Movies HTML/trumanshow.html')">
+                            <a href="../Coding/media details/Movies HTML/trumanshow.html">The Truman Show</a>
+                        </div>  
+
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/lalalandver.avif" alt="La La Land" onclick="goToMovie('../Coding/media details/Movies HTML/LaLaLand.html')">
+                            <a href="../Coding/media details/Movies HTML/LaLaLand.html">La La Land</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/spidermanver.avif" alt="Spider-man: No Way Home" onclick="goToMovie('../Coding/media details/Movies HTML/spiderman.html')">
+                            <a href="../Coding/media details/Movies HTML/spiderman.html">Spider-man: No Way Home</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/interstellaver.avif" alt="Interstellar" onclick="goToMovie('../Coding/media details/Movies HTML/interstellar.html')">
+                            <a href="../Coding/media details/Movies HTML/interstellar.html">InterStellar</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/jokerver.avif" alt="Joker" onclick="goToMovie('../Coding/media details/Movies HTML/joker.html')">
+                            <a href="../Coding/media details/Movies HTML/joker.html">Joker</a>
+                        </div>
+                    
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/1900ver.avif" alt="The Legend of 1900" onclick="goToMovie('../Coding/media details/Movies HTML/1900.html')">
+                            <a href="../Coding/media details/Movies HTML/1900.html">The Legend of 1900</a>
+                        </div>
+                
+                        <div class="media-item">
+                            <img src="../Coding/image/movies img/greatgatsbyver.avif" alt="The Great Gatsby" onclick="goToMovie('../Coding/media details/Movies HTML/greatgatsby.html')">
+                            <a href="../Coding/media details/Movies HTML/greatgatsby.html">The Great Gatsby</a>
+                        </div>                     
+                    </div>
+
+                    <button class="media-btn right-btn" onclick="scrollCarousel(this, 1)">&#10095;</button>
+                </div>
+
+                <h2>Cartoon</h2>
+
+                <div class="media-wrapper">
+                    <button class="media-btn left-btn" onclick="scrollCarousel(this, -1)">&#10094;</button>
+
+                    <div class="media-row">
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/upver.avif" alt="Up" onclick="goToMovie('../Coding/media details/Cartoon HTML/up.html')">
+                            <a href="../Coding/media details/Cartoon HTML/up.html">Up</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/cocover.avif" alt="Coco" onclick="goToMovie('../Coding/media details/Cartoon HTML/coco.html')">
+                            <a href="../Coding/media details/Cartoon HTML/coco.html">Coco</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/insideoutver.avif" alt="Inside Out 2" onclick="goToMovie('../Coding/media details/Cartoon HTML/insideout2.html')">
+                            <a href="../Coding/media details/Cartoon HTML/insideout2.html">Inside Out 2</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/bigherover.avif" alt="Big Hero 6" onclick="goToMovie('../Coding/media details/Cartoon HTML/bighero.html')">
+                            <a href="../Coding/media details/Cartoon HTML/bighero.html">Big Hero 6</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/zootopiaver.avif" alt="Zootopia 2" onclick="goToMovie('../Coding/media details/Cartoon HTML/zootopia2.html')">
+                            <a href="../Coding/media details/Cartoon HTML/zootopia2.html">Zootopia 2</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/kungfupandaver.avif" alt="Kung Fu Panda" onclick="goToMovie('../Coding/media details/Cartoon HTML/kungfupanda.html')">
+                            <a href="../Coding/media details/Cartoon HTML/kungfupanda.html">Kung Fu Panda 4</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/migrationver.avif" alt="Migration" onclick="goToMovie('../Coding/media details/Cartoon HTML/migration.html')">
+                            <a href="../Coding/media details/Cartoon HTML/migration.html">Migration</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/minionsver.avif" alt="Minions: Despicable Me 2" onclick="goToMovie('../Coding/media details/Cartoon HTML/minions.html')">
+                            <a href="../Coding/media details/Cartoon HTML/minions.html">Minions: Despicable Me 3</a>
+                        </div>
+                        
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/elementalver.avif" alt="Elemental" onclick="goToMovie('../Coding/media details/Cartoon HTML/elemental.html')">
+                            <a href="../Coding/media details/Cartoon HTML/elemental.html">Elemental</a>
+                        </div>
+                    
+                        <div class="media-item">
+                            <img src="../Coding/image/cartoon img/bossbabyver.avif" alt="The Boss Baby" onclick="goToMovie('../Coding/media details/Cartoon HTML/thebossbaby.html')">
+                            <a href="../Coding/media details/Cartoon HTML/thebossbaby.html">The Boss Baby</a>
+                        </div>
+                    </div>
+
+                    <button class="media-btn right-btn" onclick="scrollCarousel(this, 1)">&#10095;</button>
+                </div>
+
+                <h2>Anime</h2>
+
+                <div class="media-wrapper">
+                    <button class="media-btn left-btn" onclick="scrollCarousel(this, -1)">&#10094;</button>
+
+                    <div class="media-row">
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/yrnamever.avif" alt="Your Name" onclick="goToMovie('../Coding/media details/Anime HTML/yourname.html')">
+                            <a href="../Coding/media details/Anime HTML/yourname.html">Your Name</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/dunkver.avif" alt="The First Slam Dunk" onclick="goToMovie('../Coding/media details/Anime HTML/dunk.html')">
+                            <a href="../Coding/media details/Anime HTML/dunk.html">The First Slam Dunk</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/suzumever.avif" alt="Suzume" onclick="goToMovie('../Coding/media details/Anime HTML/suzume.html')">
+                            <a href="../Coding/media details/Anime HTML/suzume.html">Suzume</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/windrisesver.avif" alt="The Wind Rises" onclick="goToMovie('../Coding/media details/Anime HTML/thewindrises.html')">
+                            <a href="../Coding/media details/Anime HTML/thewindrises.html">The Wind Rises</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/boyandheronver.avif" alt="The Boy and The Heron" onclick="goToMovie('../Coding/media details/Anime HTML/boyandheron.html')">
+                            <a href="../Coding/media details/Anime HTML/boyandheron.html">The Boy and The Heron</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/marniever.avif" alt="When Marnie Was There" onclick="goToMovie('../Coding/media details/Anime HTML/marnie.html')">
+                            <a href="../Coding/media details/Anime HTML/marnie.html">When Marnie Was There</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/weatheringver.avif" alt="Weathering With You" onclick="goToMovie('../Coding/media details/Anime HTML/weatheringwithyou.html')">
+                            <a href="../Coding/media details/Anime HTML/weatheringwithyou.html">Weathering With You</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/oceanwavesver.avif" alt="Ocean Waves" onclick="goToMovie('../Coding/media details/Anime HTML/oceanwaves.html')">
+                            <a href="../Coding/media details/Anime HTML/oceanwaves.html">Ocean Waves</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/shinchanver.avif" alt="Crayon Shin-chan: Intense Battle! Robo Dad Strikes Back" onclick="goToMovie('../Coding/media details/Anime HTML/shinchan.html')">
+                            <a href="../Coding/media details/Anime HTML/shinchan.html">Crayon Shin-chan: Intense Battle! Robo Dad Strikes Back</a>
+                        </div>
+
+                        <div class="media-item">
+                            <img src="../Coding/image/anime img/bubblever.avif" alt="Bubble" onclick="goToMovie('../Coding/media details/Anime HTML/bubble.html')">
+                            <a href="../Coding/media details/Anime HTML/bubble.html">Bubble</a>
+                        </div>
+                    </div>
+
+                    <button class="media-btn right-btn" onclick="scrollCarousel(this, 1)">&#10095;</button>
+                </div>
+            </section>
+        
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="home.html">
+                        <img class="logo" src="../Coding/image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="home.html">Home Page</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../Coding/image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../Coding/image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+    </main>
+
+    <script src="../Coding/js/search.js"></script>
+    <script src="../Coding/js/username.js"></script>
+    <script src="../Coding/js/home.js"></script>
+    
+    </body>
+</html>

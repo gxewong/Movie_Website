@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../Coding/css/Header.css">
+        <link rel="stylesheet" href="../Coding/css/Footer.css">
+        <link rel="stylesheet" href="../Coding/css/Contact-Form.css">
+    </head>
+
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../Coding/image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../Coding/image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="cartoon.html">Cartoon</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../Coding/image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Contact Us</h2>
+
+                <form method="post">
+                    <p>Have something to share? We welcome your feedback and suggestions.</p>
+
+                    <label for="name">*Username:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">*Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <span id="emailError"></span><br><br>
+
+                    <label for="comment">*Comment:</label><br>
+                    <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea><br><br><br>
+                    
+                    <button type="reset">Reset</button> 
+                    <button type="submit" disabled>Submit</button>
+                </form>
+            
+            <p class="fcontact"><b>Contact Us:</b></p>
+                    <!--gmail-->
+                    <div class="gmail-icon">
+                        <img src="../Coding/image/icon img/Gmail Icon.png" alt="Gmail">
+                        <a href="mailto:auratheatre@gmail.com">auratheatre@gmail.com</a>
+                    </div>
+                    <!--call-->
+                    <a href="tel:011-28456793" class="phone">011-28456793</a>
+                    <a href="tel:03-7846 2938" class="phone">03-7846 2938</a>
+        </main>
+        
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="home.html">
+                        <img class="logo" src="../Coding/image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="home.html">Home Page</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../Coding/image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../Coding/image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../Coding/js/search.js"></script>
+        <script src="../Coding/js/username.js"></script>
+        <script src="../Coding/js/contact_form.js"></script>  
+
+    </body>
+</html>

@@ -1,0 +1,277 @@
+/* ===================== Global ===================== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url("../image/background.gif") center/cover no-repeat fixed;
+    color: #d7e2ff;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 5, 20, 0.45);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Place all content above overlay */
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===================== Main Title ===================== */
+main h2 {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(32px, 8vw, 100px);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #27e8ff;
+    text-shadow: 0 0 12px #27e8ff, 0 0 25px #8d4cff;
+}
+
+/* ===================== Form Container ===================== */
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px 40px;
+    background: rgba(20, 10, 40, 0.45);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(130, 60, 255, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(130, 60, 255, 0.4);
+}
+
+form p {
+    color: #ffd9fb;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* ===================== Form Inputs ===================== */
+label {
+    font-weight: bold;
+    color: #27e8ff;
+    text-shadow: 0 0 12px #27e8ff, 0 0 25px #8d4cff;
+}
+
+input,
+textarea {
+    width: 97%;
+    padding: 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(39, 232, 255, 0.5);
+    color: #d7e2ff;
+    font-size: 16px;
+    outline: none;
+    margin-top: 6px;
+    box-shadow: 0 0 10px rgba(39, 232, 255, 0.3);
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Email error message */
+#emailError {
+    color: #ff7ad6;
+    text-shadow: 0 0 10px #ff2ac8;
+    font-weight: bold;
+}
+
+/* ===================== Buttons ===================== */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid rgba(255, 42, 200, 0.9);
+    background: rgba(255, 42, 200, 0.7);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 42, 200, 0.7);
+    transition: 0.25s;
+    margin-right: 10px;
+}
+
+button:hover:not([disabled]) {
+    background: rgba(255, 42, 200, 1);
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(255, 42, 200, 1);
+}
+
+button[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ===================== Contact Info Below Form ===================== */
+.fcontact {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    color: #ff2ac8;
+    text-shadow: 0 0 12px #ff2ac8, 0 0 25px #8d4cff;
+}
+
+.gmail-icon,
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #d7e2ff;
+    text-decoration: none;
+    text-shadow: 0 0 8px rgba(39, 232, 255, 0.7);
+}
+
+.gmail-icon img {
+    width: 28px;
+}
+
+.gmail-icon a {
+    color: #d7e2ff;
+    text-decoration: none;
+}
+
+.phone:hover,
+.gmail-icon a:hover {
+    color: #27e8ff;
+}
+
+/* ===================== Responsive ===================== */
+/* ===== Tablet & below ===== */
+@media screen and (max-width: 1024px) {
+    main h2 {
+        font-size: clamp(28px, 7vw, 64px);
+    }
+
+    form {
+        max-width: 580px;
+        padding: 22px 30px;
+    }
+
+    form p {
+        font-size: 18px;
+    }
+
+    input,
+    textarea {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 9px 18px;
+    }
+
+    .fcontact {
+        font-size: 22px;
+    }
+
+    .gmail-icon,
+    .phone {
+        font-size: 18px;
+    }
+}
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 768px) {
+    main h2 {
+        font-size: clamp(24px, 8vw, 48px);
+        text-align: center;
+    }
+
+    form {
+        max-width: 100%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    form p {
+        font-size: 16px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 8px 16px;
+        margin-bottom: 10px;
+    }
+
+    .fcontact {
+        font-size: 20px;
+    }
+
+    .gmail-icon,
+    .phone {
+        font-size: 17px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* ===== Small Mobile ===== */
+@media screen and (max-width: 480px) {
+    main h2 {
+        font-size: clamp(20px, 9vw, 36px);
+    }
+
+    form {
+        margin: 15px;
+        padding: 16px;
+    }
+
+    form p {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+        margin-right: 0;
+    }
+
+    .fcontact {
+        font-size: 18px;
+    }
+
+    .gmail-icon,
+    .phone {
+        font-size: 16px;
+        gap: 8px;
+    }
+
+    .gmail-icon img {
+        width: 22px;
+    }
+}

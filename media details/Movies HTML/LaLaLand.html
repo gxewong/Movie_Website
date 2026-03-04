@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - La La Land</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Movies Details/La La Land/La La Land (2016 Movie) Official Trailer – 'Dreamers'.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">La La Land</div>
+                    <div class="movie-info">2016 ‧ Musical/Romance</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.netflix.com/my-en/title/80095365" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>2hr 8min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>Aspiring actress serves lattes to movie stars in between auditions and jazz musician Sebastian scrapes by playing cocktail-party gigs in dingy bars. 
+                        But as success mounts, they are faced with decisions that fray the fragile fabric of their love affair, 
+                        and the dreams they worked so hard to maintain in each other threaten to rip them apart.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../Movies Details/La La Land/overview.webp">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Damien_Chazelle">Damien Chazelle</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Story By:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Damien_Chazelle">Damien Chazelle</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/Ryan.avif" alt="Ryan Gosling">
+                            <p><b>Sebastian </b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Ryan_Gosling">Ryan Gosling</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/Emma.avif" alt="Emma Stone">
+                            <p><b>Mia</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Emma_Stone">Emma Stone</a></p>
+                        </div>
+                        
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/John.avif" alt="John Legend">
+                            <p><b>Keith</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/John_Legend">John Legend</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/Simmons.avif" alt="J. K. Simmons">
+                            <p><b>Bill</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/J._K._Simmons">J. K. Simmons</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/Rosemarie.avif" alt="Rosemarie DeWitt">
+                            <p><b>Laura Wilder</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Rosemarie_DeWitt">Rosemarie DeWitt</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/Callie.avif" alt="Callie Hernandez">
+                            <p><b>Tracy</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Callie_Hernandez">Callie Hernandez</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/Sonoya.avif" alt="Sonoya Mizuno">
+                            <p><b>Caitlin</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Sonoya_Mizuno">Sonoya Mizuno</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/La La Land/Jessica.avif" alt="Jessica Rothe">
+                            <p><b>Alexis</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Jessica_Rothe">Jessica Rothe</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Summit_Entertainment">Summit Entertainment</a></p>
+                <p>Marc Platt Productions</p>
+                <p>Impostor Pictures</p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                        5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

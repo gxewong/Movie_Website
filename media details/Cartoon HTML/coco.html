@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Coco </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Cartoon Details/Coco/Coco Official Final Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Coco</div>
+                    <div class="movie-info">2017 · Family, Animation, Adventure, Fantasy, Mystery, Drama, Music, Musical</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.apps.disneyplus.com/my/movies/coco/1660010633?search_query=coco" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>1hr 45min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>Coco is a vibrant 2017 Disney/Pixar film about 12-year-old Miguel, a boy who dreams of being a musician despite his family's ban on music, 
+                        and on the magical Día de los Muertos (Day of the Dead), he's accidentally transported to the colorful Land of the Dead, 
+                        where he teams up with a trickster spirit, Héctor, to find his deceased musician great-great-grandfather and uncover his family's true history, 
+                        learning profound lessons about family, memory, and legacy along the way. </p>
+                </div>
+                <div class="img-container">
+                    <img src="../../media details/Cartoon Details/Coco/overview.webp">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Lee_Unkrich">Lee Unkrich</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Adrian_Molina">Adrian Molina (Co-director)</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Story By:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Lee_Unkrich">Lee Unkrich</a></p>
+                <p><a href="">Jason Katz</a></p>
+                <p><a href="">Matthew Aldrich</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Adrian_Molina">Adrian Molina</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastLinda.jpg" alt="Linda Larkin">
+                            <p><b>Miguel (age 3)</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Linda_Larkin">Linda Larkin</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastAnthony.jpg" alt="Anthony Gonzalez">
+                            <p><b>Miguel Rivera</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Anthony_Gonzalez_(actor)">Anthony Gonzalez</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastGael.jpg" alt="Gael García Bernal">
+                            <p><b>Héctor</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Gael_Garc%C3%ADa_Bernal">Gael García Bernal</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastBenjamin.jpg" alt="Benjamin Bratt">
+                            <p><b>Ernesto de la Cruz</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Benjamin_Bratt">Benjamin Bratt</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastAlanna.jpg" alt="Alanna Ubach">
+                            <p><b>Mamá Imelda</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Alanna_Ubach">Alanna Ubach</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastRenée.jpg" alt="Renée Victor">
+                            <p><b>Abuelita Elena</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Ren%C3%A9e_Victor">Renée Victor</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastAna.webp" alt="Ana Ofelia Murguía">
+                            <p><b>Mamá Coco</b></p>
+                            <p>Voiced by <a href="https://es.wikipedia.org/wiki/Ana_Ofelia_Murgu%C3%ADa">Ana Ofelia Murguía</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Coco/CocoCastFrank.jpg" alt="Frank Welker">
+                            <p><b>Dante</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Frank_Welker">Frank Welker</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Pixar">Pixar Animation Studios</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

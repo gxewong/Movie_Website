@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Minions: Despicable Me 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Cartoon Details/Minions/Minions.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Minions: Despicable Me 3</div>
+                    <div class="movie-info">2017 · Adventure, Action, Animation, Comedy, Family, Science Fiction, Crime</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www3.stage.netflix.com/my-en/title/80166314" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>1hr 30min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>After he is fired from the Anti-Villain League for failing to take down the latest bad guy to 
+                        threaten humanity, Gru (Steve Carell) finds himself in the midst of a major identity crisis. 
+                        But when a mysterious stranger shows up to inform Gru that he has a long-lost twin 
+                        brother - a brother who desperately wishes to follow in his twin's despicable footsteps - one 
+                        former supervillain will rediscover just how good it feels to be bad.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../../media details/Cartoon Details/Minions/overview.jpg">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Pierre_Coffin">Pierre Coffin</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Kyle_Balda">Kyle Balda</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Written By:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Cinco_Paul_and_Ken_Daurio">Cinco Paul</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Cinco_Paul_and_Ken_Daurio">Ken Daurio</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Steve Carell.jpg" alt="Steve Carell">
+                            <p><b>Gru/Dru</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Steve_Carell">Steve Carell</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Kristen Wiig.jpg" alt="Kristen Wiig">
+                            <p><b>Lucy Wilde</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Kristen_Wiig">Kristen Wiig</a></p>
+
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Trey Parker.jpg" alt="Trey Parker">
+                            <p><b>Balthazar</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Trey_Parker">Trey Parker</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Miranda Cosgrove.jpg" alt="Miranda Cosgrove">
+                            <p><b>Margo</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Miranda_Cosgrove">Miranda Cosgrove</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Dana Gaier.webp" alt="Dana Gaier">
+                            <p><b>Edith</b></p>
+                            <p>Voiced by <a href="">Dana Gaier</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Nhev Scharrel.webp" alt="Nhev Scharrel">
+                            <p><b>Agnes</b></p>
+                            <p>Voiced by <a href="">Nhev Scharrel</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Pierre Coffin.jpg" alt="Pierre Coffin">
+                            <p><b>Mel/ Minions</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Pierre_Coffin">Pierre Coffin</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Minions/Steve Coogan.jpg" alt="Steve Coogan">
+                            <p><b>Frits/Silas Ramsbottom</b></p>
+                            <p>Voiced by <a href="hhttps://en.wikipedia.org/wiki/Steve_Coogan">Steve Coogan</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Pixar">Pixar Animation Studios</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Kung Fu Panda 4 </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Cartoon Details/Kung Fu Panda/KUNG FU PANDA 4  Official Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Kung Fu Panda 4</div>
+                    <div class="movie-info">2024 · Animation, Action, Adventure, Comedy, Family, Fantasy, Thriller, Martial Arts</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.netflix.com/title/70305902" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>1hr 34min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>After Po is tapped to become the Spiritual Leader of the Valley of Peace, he needs to find 
+                        and train a new Dragon Warrior, while a wicked sorceress plans to re-summon all the master 
+                        villains whom Po has vanquished to the spirit realm.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../../media details/Cartoon Details/Kung Fu Panda/overview.webp">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Mike_Mitchell_(director)">Mike Mitchell</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Written by:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Jonathan_Aibel">Jonathan Aibel</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Glenn_Berger">Glenn Berger</a></p>    
+                <p><a href="https://en.wikipedia.org/wiki/Darren_Lemke">Darren Lemke</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">
+                    <div class="cast-row">
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/Jack Black.jpg" alt="Jack Black">
+                            <p><b>Po</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Jack_Black">Jack Black</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/Awkwafina.jpg" alt="Awkwafina">
+                            <p><b>Zhen</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Awkwafina">Awkwafina</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/Viola Davis.jpg" alt="Viola Davis">
+                            <p><b>The Chameleon</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Viola_Davis">Viola Davis</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/Dustin Hoffman.jpg" alt="Dustin Hoffman">
+                            <p><b>Shifu</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Dustin_Hoffman">Dustin Hoffman</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/Bryan_Cranston.jpg" alt="Bryan Cranston">
+                            <p><b>Li</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Bryan_Cranston">Bryan Cranston</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/James Hong.jpg" alt="James Hong">
+                            <p><b>Mr. Ping</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/James_Hong">James Hong</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/Ian McShane.jpg" alt="Ian McShane">
+                            <p><b>Tai Lung</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Ian_McShane">Ian McShane</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Kung Fu Panda/Ke Huy Quan.webp" alt="Ke Huy Quan">
+                            <p><b>Han</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Ke_Huy_Quan">Ke Huy Quan</a></p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/DreamWorks_Animation">DreamWorks Animation</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+        </main>
+    </body>
+</html>

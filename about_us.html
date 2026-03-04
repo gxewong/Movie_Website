@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AuraTheatre - About</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Coding/css/Header.css">
+        <link rel="stylesheet" href="../Coding/css/About-us.css">
+        <link rel="stylesheet" href="../Coding/css/Footer.css">
+    </head>
+
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../Coding/image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../Coding/image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="cartoon.html">Cartoon</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../Coding/image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+
+        <!--Page content -->
+        <main>
+
+            <!-- Section: About Us header -->
+            <section class="about-section">
+                <div class="about-title">
+                    <p>ABOUT US</p>
+                </div>
+
+                <div class="about-photo">
+                    <img src="../Coding/image/group img/4ppl image.png" alt="Group Photo">
+                </div>
+            </section>
+
+            <!-- Section: Team members -->
+            <section class="team-section">
+
+                <div class="team-title">
+                    <p>Our Team</p>
+                </div>
+
+                <!-- Member 1 -->
+                <div class="team-member-row left-photo">
+                    <div class="member-photo-box">
+                        <p>Member 1</p>
+                        <img class="member-photo" src="../Coding/image/group img/LEH Full Image.jpeg" alt="Member 1">
+                    </div>
+                    <div class="member-info">
+                        <div class="info-labels">
+                            <p>Name:</p>
+                            <p>Student ID:</p>
+                            <p>Responsibility:</p>
+                        </div>
+                        <div class="info-values">
+                            <p>Lee Earn Hui</p>
+                            <p>25008442</p>
+                            <ul>
+                                <li>Designed and implemented the website layout</li>
+                                <li>Developed CSS for styling and responsive design</li>
+                                <li>Assisted in writing and editing HTML structure</li>
+                            </ul>
+                        </div>
+                        <button class="cv-btn" onclick="goToCV('lehCV.html')">CV &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="team-member-row right-photo">
+                    <div class="member-photo-box">
+                        <p>Member 2</p>
+                        <img class="member-photo" src="../Coding/image/group img/Chloe Full Image.jpeg" alt="Member 2">
+                    </div>
+                    <div class="member-info">
+                        <div class="info-labels">
+                            <p>Name:</p>
+                            <p>Student ID:</p>
+                            <p>Responsibility:</p>
+                        </div>
+                        <div class="info-values">
+                            <p>Yong Park Kei</p>
+                            <p>25022641</p>
+                            <ul>
+                                <li>Designed and implemented the website layout</li>
+                                <li>Implemented HTML structure and content for web pages</li>
+                                <li>Applied basic CSS for styling and JavaScript for interactivity</li>
+                            </ul>
+                        </div>
+                        <button class="cv-btn" onclick="goToCV('chloeCV.html')">CV &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="team-member-row left-photo">
+                    <div class="member-photo-box">
+                        <p>Member 3</p>
+                        <img class="member-photo" src="../Coding/image/group img/MM Full Image.png" alt="Member 3">
+                    </div>
+                    <div class="member-info">
+                        <div class="info-labels">
+                            <p>Name:</p>
+                            <p>Student ID:</p>
+                            <p>Responsibility:</p>
+                        </div>
+                        <div class="info-values">
+                            <p>Lee Min Ming</p>
+                            <p>25032509</p>
+                            <ul>
+                                <li>Designed and implemented the website layout</li>
+                                <li>Implemented JavaScript functionality to improve UI styling</li>
+                                <li>Optimize responsiveness for desktop and mobile users using JS</li>
+                            </ul>
+                        </div>
+                        <button class="cv-btn" onclick="goToCV('lmmCV.html')">CV &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="team-member-row right-photo">
+                    <div class="member-photo-box">
+                        <p>Member 4</p>
+                        <img class="member-photo" src="../Coding/image/group img/Grace Full Image.jpeg" alt="Member 4">
+                    </div>
+                    <div class="member-info">
+                        <div class="info-labels">
+                            <p>Name:</p>
+                            <p>Student ID:</p>
+                            <p>Responsibility:</p>
+                        </div>
+                        <div class="info-values">
+                            <p>Grace Wong Xin En</p>
+                            <p>24127094</p>
+                            <ul>
+                                <li>Designed and implemented the website layout</li>
+                                <li>Prepared detailed reports summarizing project insights and results</li>
+                            </ul>
+                        </div>
+                        <button class="cv-btn" onclick="goToCV('graceCV.html')">CV &rarr;</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="home.html">
+                        <img class="logo" src="../Coding/image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="home.html">Home Page</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../Coding/image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../Coding/image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+        
+        <script src="../Coding/js/search.js"></script>
+        <script src="../Coding/js/username.js"></script>
+        <script src="../Coding/js/about_us.js"></script>
+
+    </body>
+</html>

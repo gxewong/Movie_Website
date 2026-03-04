@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Cartoon</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Coding/css/Header.css">
+        <link rel="stylesheet" href="../Coding/css/Footer.css">
+        <link rel="stylesheet" href="../Coding/css/media.css">
+    </head>
+    
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../Coding/image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../Coding/image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="cartoon.html">Cartoon</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../Coding/image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--slideshow-->
+            <div class="slideshow-container">
+
+                <div class="slide fade">
+                    <img src="../Coding/image/cartoon img/elemental.jpg" onclick="goToMovie('../Coding/media details/Cartoon HTML/elemental.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/cartoon img/bighero.jpg" onclick="goToMovie('../Coding/media details/Cartoon HTML/bighero.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/cartoon img/kungfupanda.jpg" onclick="goToMovie('../Coding/media details/Cartoon HTML/kungfupanda.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/cartoon img/coco.jpg" onclick="goToMovie('../Coding/media details/Cartoon HTML/coco.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/cartoon img/bossbaby.jpg" onclick="goToMovie('../Coding/media details/Cartoon HTML/thebossbaby.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/cartoon img/zootopia.jpg" onclick="goToMovie('../Coding/media details/Cartoon HTML/zootopia2.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/cartoon img/insideout.jpeg" onclick="goToMovie('../Coding/media details/Cartoon HTML/insideout2.html')" style="cursor:pointer;">
+                </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="manualSlide(-1)">&#10094;</a>
+                <a class="next" onclick="manualSlide(1)">&#10095;</a>
+
+            </div>
+
+            <!--cartoon recommendation-->
+            <section class="recommendations">
+                <h2>Recommended Cartoons</h2>
+
+                <div class="sort-container">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" onchange="sortMovies()">
+                        <option value=""></option>
+                        <option value="az">Sort from A-Z</option>
+                        <option value="za">Sort from Z-A</option>
+                    </select>
+                </div>
+
+                <div class="movies-container">
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/minions.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/minions.html')">
+                        <img src="../Coding/image/cartoon img/minionsver.avif" alt="Minions: Despicable Me 3 Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Minions: Despicable Me 3</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.3/10</p>
+                            <p><b>Rotten Tomatoes:</b> 75%</p>
+                            <p><b>Letterboxd:</b> 3.3/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a>; <a href="https://en.wikipedia.org/wiki/France">France</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Pierre_Coffin">Pierre Coffin</a>;
+                            <a href="https://en.wikipedia.org/wiki/Chris_Renaud">Chris Renaud</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/minions.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/minions.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/elemental.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/elemental.html')">
+                        <img src="../Coding/image/cartoon img/elementalver.avif" alt="Elemental Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Elemental</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.0/10</p>
+                            <p><b>Rotten Tomatoes:</b> 73%</p>
+                            <p><b>Letterboxd:</b> 3.3/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Peter_Sohn">Peter Sohn</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/elemental.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/elemental.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/bighero.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/bighero.html')">
+                        <img src="../Coding/image/cartoon img/bigherover.avif" alt="Big Hero 6 Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Big Hero 6</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.8/10</p>
+                            <p><b>Rotten Tomatoes:</b> 90%</p>
+                            <p><b>Letterboxd:</b> 3.8/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Don_Hall_(filmmaker)">Don Hall</a>;
+                            <a href="https://en.wikipedia.org/wiki/Chris_Williams_(director)">Chris Williams</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/bighero.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/bighero.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/migration.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/migration.html')">
+                        <img src="../Coding/image/cartoon img/migrationver.avif" alt="Migration Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Migration</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 6.6/10</p>
+                            <p><b>Rotten Tomatoes:</b> 73%</p>
+                            <p><b>Letterboxd:</b> 4.0/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Benjamin_Renner">Benjamin Renner</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/migration.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/migration.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/kungfupanda.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/kungfupanda.html')">
+                        <img src="../Coding/image/cartoon img/kungfupandaver.avif" alt="Kung Fu Panda Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Kung Fu Panda 4</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.6/10</p>
+                            <p><b>Rotten Tomatoes:</b> 87%</p>
+                            <p><b>Letterboxd:</b> 3.9/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Mark_Osborne_(filmmaker)">Mark Osborne</a>;
+                            <a href="https://en.wikipedia.org/wiki/John_Stevenson_(director)">John Stevenson</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/kungfupanda.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/kungfupanda.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/coco.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/coco.html')">
+                        <img src="../Coding/image/cartoon img/cocover.avif" alt="Coco Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Coco</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.4/10</p>
+                            <p><b>Rotten Tomatoes:</b> 97%</p>
+                            <p><b>Letterboxd:</b> 4.1/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Mexico">Mexico</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Adrian_Molina">Adrian Molina</a>;
+                            <a href="https://en.wikipedia.org/wiki/Lee_Unkrich">Lee Unkrich</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/coco.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/coco.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/thebossbaby.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/thebossbaby.html')">
+                        <img src="../Coding/image/cartoon img/bossbabyver.avif" alt="The Boss Baby Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>The Boss Baby</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 6.3/10</p>
+                            <p><b>Rotten Tomatoes:</b> 53%</p>
+                            <p><b>Letterboxd:</b> 2.6/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Tom_McGrath_(animator)">Tom McGrath</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/thebossbaby.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/thebossbaby.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/insideout2.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/insideout2.html')">
+                        <img src="../Coding/image/cartoon img/insideoutver.avif" alt="Inside Out 2 Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Inside Out 2</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.2/10</p>
+                            <p><b>Rotten Tomatoes:</b> 92%</p>
+                            <p><b>Letterboxd:</b> 3.6/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Kelsey_Mann">Kelsey Mann</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/insideout2.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/insideout2.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/zootopia2.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/zootopia2.html')">
+                        <img src="../Coding/image/cartoon img/zootopiaver.avif" alt="Zootopia 2 Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Zootopia 2</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.6/10</p>
+                            <p><b>Rotten Tomatoes:</b> 97%</p>
+                            <p><b>Letterboxd:</b> 3.8/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Jared_Bush">Jared Bush</a>;
+                            <a href="https://en.wikipedia.org/wiki/Byron_Howard">Byron Howard</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/zootopia2.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/zootopia2.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Cartoon HTML/up.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/up.html')">
+                        <img src="../Coding/image/cartoon img/upver.avif" alt="Up Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Up</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.3/10</p>
+                            <p><b>Rotten Tomatoes:</b> 96%</p>
+                            <p><b>Letterboxd:</b> 4.1/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Pete_Docter">Peter Hans Docter</a></p>
+                        <a href="../Coding/media details/Cartoon HTML/up.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Cartoon HTML/up.html')">Click For More</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+            
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="home.html">
+                        <img class="logo" src="../Coding/image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="home.html">Home Page</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../Coding/image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../Coding/image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+            
+        <script src="../Coding/js/search.js"></script>
+        <script src="../Coding/js/username.js"></script>
+        <script src="../Coding/js/movies_cartoon_anime.js"></script>
+
+    </body>
+</html>

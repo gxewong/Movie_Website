@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Elemental </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Cartoon Details/Elemental/Elemental  Teaser Trailer  Pixar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Elemental</div>
+                    <div class="movie-info">2023 · Animation, Adventure, Comedy, Family, Fantasy, Romance</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.netflix.com/title/70305902" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>1hr 42min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>In the movie, we follow the adventures of Ember and Wade, two distinct characters 
+                        in a unique urban setting inhabited by individuals aligned with the elements of 
+                        fire, water, earth, and air. Ember, with her passionate disposition, and Wade, 
+                        who embodies ease and adaptability, embark on a path of discovery, uncovering 
+                        the surprising similarities they share. </p>
+                </div>
+                <div class="img-container">
+                    <img src="../../media details/Cartoon Details/Elemental/overview.jpg">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Peter_Sohn">Peter Sohn</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Story by:</h3>
+                <p><a href="">Peter Sohn</a></p>
+                <p><a href="">John Hoberg</a></p>    
+                <p><a href="">Kat Likkel</a></p>
+                <p><a href="">renda Hsueh</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">
+                    <div class="cast-row">
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Leah Lewis.jpg" alt="Leah Lewis">
+                            <p><b>Ember</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Leah_Lewis">Leah Lewis</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Mamoudou Athie.jpg" alt="Mamoudou Athie">
+                            <p><b>Wade</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Mamoudou_Athie">Mamoudou Athie</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Ronnie del Carmen.jpg" alt="Ronnie del Carmen">
+                            <p><b>Bernie</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Ronnie_del_Carmen">Ronnie del Carmen</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Shila Ommi.webp" alt="Shila Ommi">
+                            <p><b>Cinder</b></p>
+                            <p>Voiced by <a href="">Shila Ommi</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Wendi McLendon-Covey.jpg" alt="Wendi McLendon-Covey">
+                            <p><b>Gale</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Wendi_McLendon-Covey">Wendi McLendon-Covey</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Catherine O'Hara.webp" alt="Catherine O'Hara">
+                            <p><b>Brook</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Catherine_O%27Hara">Catherine O'Hara</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Mason Wertheimer.webp" alt="Mason Wertheimer">
+                            <p><b>Clod</b></p>
+                            <p>Voiced by <a href="">Mason Wertheimer</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Elemental/Ronobir Lahiri.webp" alt="Ronobir Lahiri">
+                            <p><b>Harold</b></p>
+                            <p>Voiced by <a href="">Ronobir Lahiri</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+                
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Pixar_Animation_Studios">Pixar Animation Studios</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

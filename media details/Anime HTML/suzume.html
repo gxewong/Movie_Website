@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Suzume</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Anime Details/Suzume/Suzume  Official Trailer 1  Netflix.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Suzume</div>
+                    <div class="movie-info">2022 · Adventure, Fantasy, Drama, Anime, Animation</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.netflix.com/my-en/title/81696498" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>2hr 2min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>Suzume, 17, lost her mother as a little girl. On her way to school, she meets a 
+                        mysterious young man. But her curiosity unleashes a calamity that endangers the 
+                        entire population of Japan, and so Suzume embarks on a journey to set things right.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../../media details/Anime Details/Suzume/overview.webp">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Makoto_Shinkai">	Makoto Shinkai</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Written By:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Makoto_Shinkai">	Makoto Shinkai</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Nanoka Hara.avif" alt="Nanoka Hara">
+                            <p><b>Suzume Iwato</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Nanoka_Hara">Nanoka Hara</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Hokuto Matsumura.avif" alt="Hokuto Matsumura">
+                            <p><b>Souta Munakata</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Hokuto_Matsumura">Hokuto Matsumura</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Eri Fukatsu.avif" alt="Eri Fukatsu">
+                            <p><b>Tamaki Iwato</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Eri_Fukatsu">Eri Fukatsu</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Shota Sometani.avif" alt="Shota Sometani">
+                            <p><b>Minoru Okabe</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Shota_Sometani">Shota Sometani</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Sairi Ito.avif" alt="Sairi Ito">
+                            <p><b>Rumi Ninomiya</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Sairi_Ito">Sairi Ito</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Kotone Hanase.avif" alt="Kotone Hanase">
+                            <p><b>Chika Amabe</b></p>
+                            <p>Voiced by <a href="">Kotone Hanase</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Kana Hanazawa.avif" alt="Kana Hanazawa">
+                            <p><b>Tsubame Iwato</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Kana_Hanazawa">Kana Hanazawa</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Anime Details/Suzume/Matsumoto Hakuō II.avif" alt="Matsumoto Hakuō II">
+                            <p><b>Hitsujiro Munakata</b></p>
+                            <p>Voiced by <a href="https://en.wikipedia.org/wiki/Matsumoto_Haku%C5%8D_II">Matsumoto Hakuō II</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/CoMix_Wave_Films">CoMix Wave Films</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

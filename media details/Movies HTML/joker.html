@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Joker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Movies Details/Joker/JOKER - Final Trailer - Now Playing In Theaters.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Joker</div>
+                    <div class="movie-info">2019 ‧ Thriller/Crime</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.netflix.com/my-en/title/81092221" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>2hr 2min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>Arthur Fleck, a party clown and a failed stand-up comedian, leads an impoverished life with his ailing mother. 
+                        However, when society shuns him and brands him as a freak, he decides to embrace the life of chaos in Gotham City.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../Movies Details/Joker/overview.jfif">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Todd_Phillips">Todd Phillips</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Story By:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Todd_Phillips">Todd Phillips</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Scott_Silver">Scott Silver</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Joker/Joaquin.avif" alt="Joaquin Phoenix">
+                            <p><b>Arthur Fleck</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Joaquin_Phoenix">Joaquin Phoenix</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Joker/Robert.avif" alt="Robert De Niro">
+                            <p><b>Murray Franklin</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Robert_De_Niro">Robert De Niro</a></p>
+                        </div>
+                        
+                        <div class="cast-member">
+                            <img src="../Movies Details/Joker/Zazie.avif" alt="Zazie Beetz">
+                            <p><b>Sophie Dumond</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Zazie_Beetz">Zazie Beetz</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Joker/Frances.avif" alt="Frances Conroy">
+                            <p><b>Penny Fleck</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Frances_Conroy">Frances Conroy</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Joker/Brett.avif" alt="Brett Cullen">
+                            <p><b>Thomas Wayne</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Brett_Cullen">Brett Cullen</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="" alt="Bill Camp">
+                            <p><b>Detective Garrity</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Bill_Camp">Bill Camp</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Joker/Glenn.avif" alt="Glenn Fleshler">
+                            <p><b>Randell</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Glenn_Fleshler">Glenn Fleshler</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/Joker/Leigh.avif" alt="Leigh Gill">
+                            <p><b>Gary</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Leigh_Gill">Leigh Gill</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Warner_Bros._Pictures">Warner Bros. Pictures</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/DC_Studios">DC Studios</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Village_Roadshow_Pictures">Village Roadshow Pictures</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Bron_Studios">Bron Studios</a></p>
+                <p>Joint Effort</p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                        5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

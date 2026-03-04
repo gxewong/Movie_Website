@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - The Great Gatsby</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Movies Details/The Great Gatsby/The Great Gatsby - 60 Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">The Great Gatsby</div>
+                    <div class="movie-info">2013 ‧ Romance/Musical</div>
+
+                    <div class="buttons">
+                        <button><a href="https://tv.apple.com/my/movie/the-great-gatsby/umc.cmc.6g93mscp6hq913vboblz5oxz6?action=play" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>2hr 33min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>An adaptation of F. Scott Fitzgerald's Long Island-set novel, 
+                        where Midwesterner Nick Carraway is lured into the lavish world of his neighbor, Jay Gatsby. 
+                        Soon enough, however, Carraway sees through the cracks of Gatsby's nouveau riche existence, 
+                        where obsession, madness, and tragedy await.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../Movies Details/The Great Gatsby/overview.webp">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Baz_Luhrmann">Baz Luhrmann</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Story By:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Baz_Luhrmann">Baz Luhrmann</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Craig_Pearce">Craig Pearce</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Leonardo.avif" alt="Leonardo DiCaprio">
+                            <p><b>James Gatz / Jay Gatsby</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Leonardo_DiCaprio">Leonardo DiCaprio</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Tobey.avif" alt="Tobey Maguire">
+                            <p><b>Nick Carraway</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Tobey_Maguire">Tobey Maguire</a></p>
+                        </div>
+                        
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Carey.avif" alt="Carey Mulligan">
+                            <p><b>Daisy Buchanan</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Carey_Mulligan">Carey Mulligan</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Joel.avif" alt="Joel Edgerton">
+                            <p><b>Tom Buchanan</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Joel_Edgerton">Joel Edgerton</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Jason.avif" alt="Jason Clarke">
+                            <p><b>George Wilson</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Jason_Clarke">Jason Clarke</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Isla.avif" alt="Isla Fisher">
+                            <p><b>Myrtle Wilson</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Isla_Fisher">Isla Fisher</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Elizabeth.avif" alt="Elizabeth Debicki">
+                            <p><b>Jordan Baker</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Elizabeth_Debicki">Elizabeth Debicki</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Great Gatsby/Amitabh.avif" alt="Amitabh Bachchan">
+                            <p><b>Meyer Wolfsheim</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Amitabh_Bachchan">Amitabh Bachchan</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Village_Roadshow_Pictures">Village Roadshow Pictures</a></p>
+                <p>Bazmark Films</p>
+                <p><a href="https://en.wikipedia.org/wiki/A%2BE_Global_Media">A+E Global Media</a></p>
+                <p>Red Wagon Production</p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                        5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

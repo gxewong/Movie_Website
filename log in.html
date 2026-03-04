@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Log In</title>
+        <link rel="stylesheet" href="../Coding/css/log-in.css">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="form-area">
+
+                <!-- Left bar with GIF -->
+                <div class="left-bar">
+                    <img src="../Coding/image/cartoon for login.gif" alt="lock" style="max-width: 80%; height: auto;">
+                </div>
+
+                <!-- Right bar (form) -->
+                <form class="right-bar" onsubmit="return validateLogin()">
+
+                    <!-- Right logo area -->
+                    <div class="logo-area-right">
+                        <img src="../Coding/image/icon img/logo.png" alt="Website Logo">
+                        <h1>AuraTheatre</h1>
+                    </div>
+
+                    <p>Welcome Back<br>Log in to your account to continue</p>
+
+                    <label for="email">*Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError"></span><br>
+
+                    <label for="password">*Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <div style="margin-bottom: 15px;">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                        <a href="sign up.html" style="float: right;">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="logInButton">Log in</button>
+                    <hr>
+                    <a href="https://myaccount.google.com/" class="social-btn">
+                        Google
+                    </a>
+
+                    <a href="https://www.facebook.com/login.php/" class="social-btn">
+                        Facebook
+                    </a>
+
+                    <p style="margin-top: 20px;">
+                        Don't have an account? <a href="sign up.html">Sign up now</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <script src="../Coding/js/log_in.js"></script>
+    </body>
+</html>

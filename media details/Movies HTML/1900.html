@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre -  The Legend of 1900</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Movies Details/The Legend of 1900/The Legend of 1900 (1998) ORIGINAL TRAILER [HQ].mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">The Legend of 1900</div>
+                    <div class="movie-info">1998 · Musical/Romance</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.netflix.com/title/60022759" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>2hr 5min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>On New Year's Day 1900, Danny (Bill Nunn), a crew member on an ocean liner, finds a deserted infant and decides to adopt him, nicknaming him "1900." 
+                        As an adult, the eccentric 1900 (Tim Roth) grows into a remarkable musician aboard the boat. 
+                        Rumors of his brilliant piano playing eventually reach the shore, and his pal Max (Pruitt Taylor Vince) believes that success surely awaits 1900 on land. 
+                        The only problem, however, is that the enigmatic pianist is loath to embrace life away from the ship.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../Movies Details/The Legend of 1900/overview.jpg">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Giuseppe_Tornatore">Giuseppe Tornatore</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Based on:</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Novecento_(monologue)">Novecento</a>
+                by <a href="https://en.wikipedia.org/wiki/Alessandro_Baricco">Alessandro Baricco</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/timroth.avif" alt="Tim Roth">
+                            <p><b>Danny Boodmann T.d. Lemon Nineteen Hundred '1900'</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Tim_Roth">Tim Roth</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/Pruitt.avif" alt="Pruitt Taylor Vince">
+                            <p><b>Max Tooney</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Pruitt_Taylor_Vince">Pruitt Taylor Vince</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/bill.avif" alt="Bill Nunn">
+                            <p><b>Danny Boodmann</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Bill_Nunn">Bill Nunn</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/melanie.avif" alt="Mélanie Thierry">
+                            <p><b>The Girl</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/M%C3%A9lanie_Thierry">Mélanie Thierry</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/Heathcote.avif" alt="Heathcote Williams">
+                            <p><b>Dr. Klauserman</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Heathcote_Williams">Heathcote Williams</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/Clarence.avif" alt="Clarence Williams III">
+                            <p><b>Jelly Roll Morton</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Clarence_Williams_III">Clarence Williams III</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/Gabriele.avif" alt="Gabriele Lavia">
+                            <p><b>Farmer</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Gabriele_Lavia">Gabriele Lavia</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Movies Details/The Legend of 1900/peter.avif" alt="Peter Vaughan">
+                            <p><b>The Shopkeeper</b></p>
+                            <p>By <a href="https://en.wikipedia.org/wiki/Peter_Vaughan">Peter Vaughan</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p>Sciarlò and <a href="https://en.wikipedia.org/wiki/Medusa_Film">Medusa Film</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                        5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

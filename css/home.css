@@ -1,0 +1,365 @@
+/* ===================== Global Styles ===================== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url("../image/background.gif") center/cover no-repeat fixed; 
+    color: #d7e2ff; 
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 5, 20, 0.45);
+    pointer-events: none;
+    z-index: 0;
+}
+
+main, header, footer, section {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===================== Slideshow ===================== */
+main h1{
+  text-align: center;
+  font-size: clamp(32px, 6vw, 70px);
+  color: #27e8ff;
+  text-shadow: 0 0 15px #27e8ff, 0 0 30px #8d4cff;
+  margin-bottom: 30px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 90%;
+    margin: 40px auto;
+    border-radius: 16px;
+    overflow: hidden; 
+    aspect-ratio: 16 / 9; 
+    background: rgba(20, 10, 40, 0.45);
+    border: 2px solid rgba(130, 60, 255, 0.6);
+    backdrop-filter: blur(12px); 
+    box-shadow: 0 0 25px rgba(130, 60, 255, 0.4);
+}
+
+.slide {
+    display: none; 
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    object-position: center; 
+    border-radius: 14px;
+    transition: transform 0.4s ease; 
+}
+
+.slide img:hover {
+    transform: scale(1.03); 
+}
+
+/* Slide text wrapper */
+.slide-text-wrapper {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: #27e8ff; 
+    background: rgba(10, 5, 20, 0.6); 
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    z-index: 100;
+    box-shadow: 0 0 12px rgba(39, 232, 255, 0.4);
+}
+
+.slide-text-wrapper h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ff2ac8;
+    text-shadow: 0 0 10px #ff2ac8;
+}
+
+.slide-text-wrapper p {
+    margin: 3px 0 0 0;
+    font-size: 1rem;
+    color: #d7e2ff; 
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Slideshow navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: #27e8ff;
+    font-size: 30px;
+    font-weight: bold;
+    background: rgba(15, 5, 35, 0.7);
+    border-radius: 50%;
+    user-select: none;
+    transform: translateY(-50%);
+    box-shadow: 0 0 15px rgba(39, 232, 255, 0.6);
+    transition: 0.3s;
+}
+
+.next { right: 15px; }
+.prev { left: 15px; }
+
+.prev:hover, .next:hover {
+    background: rgba(39, 232, 255, 0.9);
+    color: #0a0514;
+}
+
+/* ===================== Media Carousel ===================== */
+.media-container{
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+
+.media-container h2{
+    text-align: start;
+    font-size: clamp(32px, 4.5vw, 70px); 
+    color: #ff2ac8; 
+    text-shadow: 0 0 15px #ff2ac8, 0 0 30px #27e8ff; 
+    margin-bottom: 30px;
+}
+
+.media-wrapper {
+    position: relative;
+}
+
+.media-row {
+    display: flex;
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.media-row::-webkit-scrollbar {
+    display: none; 
+}
+
+.media-item {
+    flex: 0 0 auto;
+    width: 180px;
+    max-width: 220px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    border-radius: 12px;
+    object-fit: contain; 
+    transition: transform 0.3s ease;
+}
+
+.media-item img:hover {
+    transform: scale(1.05); 
+}
+
+.media-item p, .media-item a {
+    display: block;
+    margin-top: 8px;
+    font-size: 2.5vh;
+    color: #27e8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.media-item a:hover, .media-item p:hover {
+    text-decoration: underline; 
+}
+
+/* Carousel scroll buttons */
+.media-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.media-btn:hover {
+    background-color: rgba(39, 232, 255, 0.9);
+    color: #0a0514;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+
+/* ===================== Responsive ===================== */
+/* ===== Tablet & below ===== */
+@media screen and (max-width: 1024px) {
+
+    main h1 {
+        font-size: clamp(28px, 6vw, 60px);
+    }
+
+    .slideshow-container {
+        max-width: 95%;
+        margin: 30px auto;
+    }
+
+    .slide-text-wrapper {
+        max-width: 80%;
+        padding: 8px 12px;
+    }
+
+    .slide-text-wrapper h3 {
+        font-size: 1.1rem;
+    }
+
+    .slide-text-wrapper p {
+        font-size: 0.95rem;
+    }
+
+    .media-container h2 {
+        font-size: clamp(26px, 4vw, 56px);
+    }
+
+    .media-item {
+        width: 150px;
+    }
+
+    .media-item img {
+        max-height: 220px;
+    }
+}
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 768px) {
+
+    main h1 {
+        font-size: clamp(24px, 7vw, 48px);
+        margin-bottom: 20px;
+    }
+
+    .slide-text-wrapper {
+        left: 10px;
+        bottom: 10px;
+        max-width: 90%;
+    }
+
+    .slide-text-wrapper h3 {
+        font-size: 1rem;
+    }
+
+    .slide-text-wrapper p {
+        font-size: 0.9rem;
+    }
+
+    .prev, .next {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .media-container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .media-container h2 {
+        font-size: clamp(22px, 5vw, 44px);
+    }
+
+    .media-item {
+        width: 130px;
+    }
+
+    .media-item img {
+        max-height: 180px;
+    }
+
+    .media-item p,
+    .media-item a {
+        font-size: 14px;
+    }
+}
+
+/* ===== Small Mobile ===== */
+@media screen and (max-width: 480px) {
+
+    main h1 {
+        font-size: clamp(20px, 8vw, 36px);
+    }
+
+    .slideshow-container {
+        aspect-ratio: 1 / 1;
+        margin: 20px auto;
+    }
+
+    .slide-text-wrapper {
+        position: static;
+        margin: 10px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .slide-text-wrapper h3 {
+        font-size: 0.95rem;
+    }
+
+    .slide-text-wrapper p {
+        font-size: 0.85rem;
+    }
+
+    .prev, .next {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .media-container h2 {
+        font-size: clamp(20px, 6vw, 36px);
+        text-align: center;
+    }
+
+    .media-row {
+        gap: 15px;
+    }
+
+    .media-item {
+        width: 85%;
+    }
+
+    .media-item img {
+        max-height: 160px;
+    }
+
+    .media-item p,
+    .media-item a {
+        font-size: 13px;
+    }
+}

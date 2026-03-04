@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Zootopia 2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/Header.css">
+        <link rel="stylesheet" href="../../css/Footer.css">
+        <link rel="stylesheet" href="../../css/Media-Details.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="../../home.html" class="logo">
+                        <img src="../../image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="../../home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../../image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="../../home.html">Home</a></li>
+                        <li><a href="../../movies.html">Movies</a></li>
+                        <li><a href="../../cartoon.html">Cartoon</a></li>
+                        <li><a href="../../anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../../image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Video container -->
+            <div class="video-container">
+                <video class="movie-video" autoplay muted loop>
+                    <source src="../Cartoon Details/Zootopia 2/Zootopia 2  Trailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="overlay">
+                    <div class="movie-title">Zootopia 2</div>
+                    <div class="movie-info">2025 · Animation, Comedy, Family, Action, Adventure, Crime, Mystery</div>
+
+                    <div class="buttons">
+                        <button><a href="https://www.apps.disneyplus.com/my/movies/zootopia-2/1271418481" target="_blank">Watch</a></button>
+                        <button id="muteBtn">Mute</button>
+                    </div>
+
+                    <div>1hr 47min</div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="introduction">
+                    <h3>Overview</h3>
+                    <p>After cracking the biggest case in Zootopia's history, rookie cops Judy Hopps and Nick 
+                        Wilde find themselves on the twisting trail of a great mystery when Gary De'Snake arrives 
+                        and turns the animal metropolis upside down. To crack the case, Judy and Nick must go 
+                        undercover to unexpected new parts of town, where their growing partnership is tested 
+                        like never before.</p>
+                </div>
+                <div class="img-container">
+                    <img src="../../media details/Cartoon Details/Zootopia 2/overview.jpg">
+                </div>
+            </div>
+
+            <!--Director section-->
+            <div class="director-section">
+                <h3>Director(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Jared_Bush">Jared Bush</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Byron_Howard">Byron Howard</a></p>
+            </div>
+
+            <!--Writers section-->
+            <div class="writer-section">
+                <h3>Written By:</h3>
+                <p><a href="">	Jared Bush</a></p>
+            </div>
+
+            <!-- Cast section -->
+            <div class="cast-section">
+                <h3>Top Billed Cast</h3>
+                
+                <button class="cast-btn left-btn" onclick="scrollCast(-1)">&#10094;</button>
+
+                <div class="cast-list">  
+                    <div class="cast-row">
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/Ginnifer Goodwin.avif" alt="Ginnifer Goodwin">
+                            <p><b>Judy Hopps</b></p>
+                            <p>Voiced by <a href="">Ginnifer Goodwin</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/Jason Bateman.avif" alt="Jason Bateman">
+                            <p><b>Nick Wilde</b></p>
+                            <p>Voiced by <a href="">Jason Bateman</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/Ke Huy Quan.avif" alt="Ke Huy Quan">
+                            <p><b>Gary De'Snake</b></p>
+                            <p>Voiced by <a href="">Ke Huy Quan</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/Fortune Feimster.avif" alt="Fortune Feimster">
+                            <p><b>Nibbles Maplestick</b></p>
+                            <p>Voiced by <a href="">Fortune Feimster</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/Andy Samberg.avif" alt="Andy Samberg">
+                            <p><b>Pawbert Lynxley</b></p>
+                            <p>Voiced by <a href="">Andy Samberg</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/David Strathairn.avif" alt="David Strathairn">
+                            <p><b>Milton Lynxley</b></p>
+                            <p>Voiced by <a href="">David Strathairn</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/Idris Elba.avif" alt="Idris Elba">
+                            <p><b>Chief Bogo</b></p>
+                            <p>Voiced by <a href="">Idris Elba</a></p>
+                        </div>
+
+                        <div class="cast-member">
+                            <img src="../Cartoon Details/Zootopia 2/Shakira.avif" alt="Shakira">
+                            <p><b>Gazelle</b></p>
+                            <p>Voiced by <a href="">Shakira</a></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="cast-btn right-btn" onclick="scrollCast(1)">&#10095;</button>
+            </div>
+
+            <!--Production Company-->
+            <div class="productioncompany-section">
+                <h3>Production Company(s):</h3>
+                <p><a href="https://en.wikipedia.org/wiki/Walt_Disney_Animation_Studios">Walt Disney Animation Studios</a></p>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="../../home.html">
+                        <img class="logo" src="../../image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="../../home.html">Home Page</a></li>
+                        <li><a href="../../about_us.html">About Us</a></li>
+                        <li><a href="../../contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../../image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../../image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../../js/search.js"></script>
+        <script src="../../js/username.js"></script>
+        <script src="../../js/all_movies_details.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Coding/css/sign-up.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="form-area">
+
+            <!-- Left bar with GIF -->
+            <div class="left-bar">
+                <img src="../Coding/image/cartoon for login.gif" alt="lock" style="max-width: 80%; height: auto;">
+            </div>
+
+            <!-- Right bar (form) -->
+            <form class="right-bar" method="post">
+
+                <!-- Logo + Website Name -->
+                <div class="logo-area">
+                    <img src="../Coding/image/icon img/logo.png" alt="Website Logo">
+                    <h1>AuraTheatre</h1>
+                </div>
+
+                <p>Create Account<br>Sign up to get started</p>
+
+                <label for="name">*Full Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">*Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError"></span><br>
+
+                <label for="password">*Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="passwordError"></span><br>
+
+                <label for="confirmpwd">*Confirm Password:</label>
+                <input type="password" id="confirmpwd" name="confirmpwd" required>
+                <span id="confirmpwdError"></span>
+
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I agree to the Terms of Service and Privacy Policy*</label>
+                </div>
+
+                <button type="submit" class="signUpButton">Create Account</button>
+                <hr>
+                <a href="https://myaccount.google.com/" class="social-btn">
+                    Google
+                </a>
+
+                <a href="https://www.facebook.com/login.php/" class="social-btn">
+                    Facebook
+                </a>
+
+                <p style="margin-top: 20px;">
+                    Already have an account? <a href="log in.html">Log in now</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Coding/js/sign_up.js"></script>
+</body>
+</html>

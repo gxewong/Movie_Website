@@ -1,0 +1,195 @@
+/* ===================== FOOTER ===================== */
+footer {
+    width: 100%; 
+    max-width: 100%;
+    padding: 25px 20px;
+    background: rgba(20, 10, 40, 0.55);
+    border-top: 2px solid rgba(130, 60, 255, 0.4);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(130, 60, 255, 0.2);
+    color: #d7e2ff;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+/* ===================== Footer Container ===================== */
+.fcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 95%;
+    margin: 0 auto; 
+}
+
+/* ===================== Footer Logo ===================== */
+.flogo img.logo {
+    width: 15vh;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(39, 232, 255, 0.4);
+    box-shadow: 0 0 15px rgba(39, 232, 255, 0.3);
+}
+
+/* ===================== Footer Links ===================== */
+.flinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flinks li {
+    margin: 4px 0;
+}
+
+.flinks a {
+    text-decoration: none;
+    color: #27e8ff;
+    font-weight: bold;
+    text-shadow: 0 0 10px #27e8ff, 0 0 20px #8d4cff;
+    transition: 0.3s;
+}
+
+.flinks a:hover {
+    color: #ffcaf5;
+    text-shadow: 0 0 15px #ffcaf5, 0 0 25px #8d4cff;
+}
+
+/* ===================== Footer Info ===================== */
+.finfo p,
+.flocation {
+    color: #d7e2ff;
+    font-size: 15px;
+    margin: 3px 0;
+}
+
+.finfo a {
+    color: #27e8ff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #27e8ff;
+}
+
+.finfo a:hover {
+    color: #ffcaf5;
+    text-shadow: 0 0 12px #ffcaf5;
+}
+
+/* ===================== Social Media ===================== */
+.flwus {
+    margin-bottom: 10px;
+}
+
+.flwus p {
+    font-weight: bold;
+    color: #27e8ff;
+    text-shadow: 0 0 10px #27e8ff;
+    margin-bottom: 10px;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.socialicon img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(39, 232, 255, 0.4);
+    box-shadow: 0 0 15px rgba(39, 232, 255, 0.3);
+    transition: 0.3s;
+}
+
+.socialicon img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(39, 232, 255, 0.7);
+}
+
+/* ===================== Copyright ===================== */
+.fcopyright {
+    font-size: 13px;
+    color: #d7e2ff;
+    text-shadow: 0 0 5px #27e8ff;
+}
+
+/* ===================== Responsive ===================== */
+/* ===== Tablet & below ===== */
+@media screen and (max-width: 1024px) {
+    .fcontainer {
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .flogo img.logo {
+        width: 13vh;
+    }
+
+    .flinks a {
+        font-size: 14px;
+    }
+
+    .finfo p,
+    .flocation {
+        font-size: 13px;
+    }
+
+    .socialicon img {
+        width: 35px;
+    }
+}
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 768px) {
+    .fcontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .flogo img.logo {
+        width: 10vh;
+    }
+
+    .flinks ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .finfo p,
+    .flocation {
+        font-size: 15px;
+    }
+
+    .socialicon img {
+        width: 30px;
+    }
+}
+
+/* ===== Small Mobile ===== */
+@media screen and (max-width: 480px) {
+    .flogo img.logo {
+        width: 8vh;
+    }
+
+    .flinks a {
+        font-size: 14px;
+    }
+
+    .finfo p,
+    .flocation {
+        font-size: 11px;
+    }
+
+    .socialicon img {
+        width: 28px;
+    }
+
+    .fcopyright {
+        font-size: 11px;
+    }
+}

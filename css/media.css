@@ -1,0 +1,349 @@
+/* ===================== Global ===================== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url("../image/background.gif") center/cover no-repeat fixed;
+    color: #d7e2ff;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 5, 20, 0.45);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Place all content above overlay */
+main, header, footer, section {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===================== Slideshow ===================== */
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 40px auto;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: rgba(20, 10, 40, 0.45);
+  border: 2px solid rgba(130, 60, 255, 0.6);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(130, 60, 255, 0.4);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.03);
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+/* Slideshow buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: #27e8ff;
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(15, 5, 35, 0.7);
+  border-radius: 50%;
+  user-select: none;
+  transform: translateY(-50%);
+  box-shadow: 0 0 15px rgba(39, 232, 255, 0.6);
+  transition: 0.3s;
+}
+
+.next {
+  right: 15px;
+}
+
+.prev {
+  left: 15px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(39, 232, 255, 0.9);
+  color: #0a0514;
+}
+
+/* ===================== Recommendation Section ===================== */
+.recommendations {
+  padding: 40px 5%;
+}
+
+.recommendations h2 {
+  text-align: center;
+  font-size: clamp(32px, 6vw, 70px);
+  color: #27e8ff;
+  text-shadow: 0 0 15px #27e8ff, 0 0 30px #8d4cff;
+  margin-bottom: 30px;
+}
+
+/* ===================== Sort Dropdown ===================== */
+.sort-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.sort-container label {
+  font-weight: bold;
+  color: #ffcaf5;
+}
+
+.sort-container select {
+  padding: 6px 12px;
+  background: rgba(20, 10, 40, 0.6);
+  border: 2px solid rgba(255, 42, 200, 0.6);
+  border-radius: 8px;
+  color: #d7e2ff;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 42, 200, 0.4);
+}
+
+/* ===================== Movies Grid ===================== */
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ===================== Movie Card ===================== */
+.movie-card {
+  background: rgba(15, 5, 35, 0.55);
+  border: 2px solid rgba(39, 232, 255, 0.4);
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 22px rgba(39, 232, 255, 0.2);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 42, 200, 0.6);
+}
+
+/* Movie Poster */
+.movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===================== Movie Info ===================== */
+.movie-info {
+  padding: 16px;
+}
+
+.movie-info h3 {
+  color: #ff2ac8;
+  text-shadow: 0 0 10px #ff2ac8;
+  margin-bottom: 10px;
+}
+
+/* Ratings box */
+.rating-box {
+  background: rgba(20, 10, 40, 0.55);
+  border: 1.5px solid rgba(141, 76, 255, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 15px rgba(141, 76, 255, 0.35);
+}
+
+.rating-title {
+  font-weight: bold;
+  color: #27e8ff;
+  margin-bottom: 6px;
+  text-shadow: 0 0 8px #27e8ff;
+}
+
+.movie-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.movie-info a {
+  color: #27e8ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.movie-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===================== Responsive ===================== */
+/* ===== Tablet & below ===== */
+@media screen and (max-width: 1024px) {
+
+  .slideshow-container {
+    max-width: 95%;
+    margin: 30px auto;
+  }
+
+  .recommendations {
+    padding: 35px 4%;
+  }
+
+  .recommendations h2 {
+    font-size: clamp(28px, 5vw, 60px);
+  }
+
+  .movies-container {
+    gap: 25px;
+  }
+
+  .movie-info h3 {
+    font-size: 18px;
+  }
+
+  .movie-info p {
+    font-size: 13.5px;
+  }
+}
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 768px) {
+
+  .prev, .next {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .recommendations {
+    padding: 30px 4%;
+  }
+
+  .recommendations h2 {
+    font-size: clamp(24px, 6vw, 48px);
+  }
+
+  .sort-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .sort-container label {
+    font-size: 14px;
+  }
+
+  .sort-container select {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .movies-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .movie-info {
+    padding: 14px;
+  }
+
+  .movie-info h3 {
+    font-size: 17px;
+  }
+
+  .movie-info p {
+    font-size: 13px;
+  }
+}
+
+/* ===== Small Mobile ===== */
+@media screen and (max-width: 480px) {
+
+  .slideshow-container {
+    margin: 20px auto;
+  }
+
+  .prev, .next {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .recommendations {
+    padding: 25px 3%;
+  }
+
+  .recommendations h2 {
+    font-size: clamp(20px, 7vw, 36px);
+    margin-bottom: 20px;
+  }
+
+  .sort-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sort-container label {
+    font-size: 13px;
+  }
+
+  .sort-container select {
+    width: 100%;
+    max-width: 220px;
+    font-size: 13px;
+  }
+
+  .movies-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .movie-card {
+    border-radius: 12px;
+  }
+
+  .movie-info h3 {
+    font-size: 16px;
+  }
+
+  .movie-info p {
+    font-size: 12.5px;
+  }
+}

@@ -1,0 +1,309 @@
+/* ===================== Global ===================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Arial', sans-serif; /* unified font */
+    background: url("../image/background.gif") center/cover no-repeat fixed;
+    color: #d7e2ff;
+    position: relative;
+    min-height: 100vh;
+    line-height: 1.5; /* better readability */
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 5, 20, 0.45);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Place all content above overlay */
+main, header, section {
+    position: relative;
+    z-index: 1;
+}
+
+/* ===================== About Us Section ===================== */
+.about-section {
+    padding: 5px 0;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(32px, 8vw, 100px);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #27e8ff;
+    text-shadow: 0 0 12px #27e8ff, 0 0 25px #8d4cff;
+}
+
+/* Neon glow card */
+.about-photo {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background: rgba(20, 10, 40, 0.45);
+    border: 2px solid rgba(130, 60, 255, 0.6);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(130, 60, 255, 0.4);
+}
+
+.about-photo img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 15px rgba(39, 232, 255, 0.25));
+}
+
+/* ===================== Team Section ===================== */
+.team-section {
+    padding: 5% 5%;
+}
+
+.team-title {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(28px, 6vw, 80px);
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    color: #ff2ac8;
+    text-shadow: 0 0 15px #ff2ac8, 0 0 30px #8d4cff;
+}
+
+/* ===================== Member Row (Neon Box) ===================== */
+.team-member-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    background: rgba(15, 5, 35, 0.55);
+    border: 2px solid rgba(39, 232, 255, 0.4);
+    border-radius: 14px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 0 22px rgba(39, 232, 255, 0.15);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Row direction presets */
+.left-photo {
+    flex-direction: row;
+}
+
+.right-photo {
+    flex-direction: row-reverse;
+}
+
+/* ===================== Member Photo Area ===================== */
+.member-photo-box {
+    flex: 1 1 300px;
+    min-width: 0;
+    text-align: center;
+    font-size: clamp(28px, 3vw, 50px); 
+    color: #27e8ff;
+    text-shadow: 0 0 12px #27e8ff;
+}
+
+.member-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 15px rgba(255, 42, 200, 0.6));
+    border: 2px solid rgba(255, 42, 200, 0.4);
+}
+
+/* ===================== Member Info Box ===================== */
+.member-info {
+    flex: 0.8 1 300px;
+    min-width: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 50px 20px;
+    background: rgba(20, 10, 40, 0.45);
+    border-radius: 10px;
+    border: 2px solid rgba(141, 76, 255, 0.5);
+    box-shadow: 0 0 18px rgba(141, 76, 255, 0.3);
+    color: #d7e2ff;
+    font-family: 'Arial', sans-serif; 
+    font-size: clamp(14px, 1.5vw, 19px);
+}
+
+.info-labels {
+    color: #27e8ff;
+    text-shadow: 0 0 10px #27e8ff;
+}
+
+.info-values {
+    color: #ffcaf5;
+    text-shadow: 0 0 10px #ffcaf5;
+}
+
+/* ===================== Neon CV Button ===================== */
+.cv-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    background: rgba(255, 42, 200, 0.75);
+    border: 2px solid rgba(255, 42, 200, 0.9);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 0 15px rgba(255, 42, 200, 0.7);
+}
+
+.cv-btn:hover {
+    transform: scale(1.08);
+    background: rgba(255, 42, 200, 1);
+    box-shadow: 0 0 25px rgba(255, 42, 200, 1);
+}
+
+/* ===================== RESPONSIVE ===================== */
+/* ===== Tablet & below ===== */
+@media screen and (max-width: 1024px) {
+    /* About Us title */
+    .about-title {
+        font-size: clamp(28px, 8vw, 60px);
+    }
+
+    /* About photo */
+    .about-photo img {
+        width: 100%;
+    }
+
+    /* Team section title */
+    .team-title {
+        font-size: clamp(24px, 6vw, 60px);
+    }
+
+    /* Team member row */
+    .team-member-row {
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    /* Member photo box */
+    .member-photo-box {
+        font-size: clamp(18px, 3vw, 24px);
+    }
+
+    .member-photo {
+        max-width: 250px;
+    }
+
+    /* Member info box */
+    .member-info {
+        gap: 10px 0;
+        padding: 15px;
+    }
+
+    .info-labels, .info-values {
+        font-size: 14px;
+    }
+
+    .cv-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* ===== Mobile ===== */
+@media screen and (max-width: 768px) {
+    /* About title smaller */
+    .about-title {
+        font-size: clamp(24px, 8vw, 48px);
+        text-align: center;
+    }
+
+    .about-photo img {
+        width: 90%;
+    }
+
+    .team-title {
+        font-size: clamp(22px, 6vw, 48px);
+        text-align: center;
+    }
+
+    .team-member-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .member-photo-box {
+        font-size: clamp(16px, 3vw, 22px);
+    }
+
+    .member-photo {
+        max-width: 220px;
+    }
+
+    .member-info {
+        gap: 8px 0;
+        padding: 10px;
+    }
+
+    .info-labels, .info-values {
+        font-size: 13px;
+    }
+
+    .cv-btn {
+        font-size: 13px;
+        padding: 7px;
+    }
+}
+
+/* ===== Small mobile ===== */
+@media screen and (max-width: 480px) {
+    .about-title {
+        font-size: clamp(20px, 10vw, 36px);
+    }
+
+    .about-photo img {
+        width: 100%;
+    }
+
+    .team-title {
+        font-size: clamp(18px, 8vw, 36px);
+    }
+
+    .team-member-row {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .member-photo-box {
+        font-size: clamp(14px, 4vw, 20px);
+    }
+
+    .member-photo {
+        max-width: 180px;
+    }
+
+    .member-info {
+        gap: 5px 0;
+        padding: 8px;
+    }
+
+    .info-labels, .info-values {
+        font-size: 12px;
+    }
+
+    .cv-btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

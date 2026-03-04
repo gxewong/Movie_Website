@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AuraTheatre - Anime</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Coding/css/Header.css">
+        <link rel="stylesheet" href="../Coding/css/Footer.css">
+        <link rel="stylesheet" href="../Coding/css/media.css">
+    </head>
+
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../Coding/image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../Coding/image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="cartoon.html">Cartoon</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../Coding/image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--slideshow-->
+            <div class="slideshow-container">
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/windrises.jpg" onclick="goToMovie('../Coding/media details/Anime HTML/thewindrises.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/yrname.jpg" onclick="goToMovie('../Coding/media details/Anime HTML/yourname.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/dunk.webp" onclick="goToMovie('../Coding/media details/Anime HTML/dunk.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/boyandheron.jpg" onclick="goToMovie('../Coding/media details/Anime HTML/boyandheron.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/bubble.jpg" onclick="goToMovie('../Coding/media details/Anime HTML/bubble.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/marnie.jpg" onclick="goToMovie('../Coding/media details/Anime HTML/marnie.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/suzume.jpg" onclick="goToMovie('../Coding/media details/Anime HTML/suzume.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/anime img/weathering.webp" onclick="goToMovie('../Coding/media details/Anime HTML/weatheringwithyou.html')" style="cursor:pointer;">
+                </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="manualSlide(-1)">&#10094;</a>
+                <a class="next" onclick="manualSlide(1)">&#10095;</a>
+
+            </div>
+
+            <!--cartoon recommendation-->
+            <section class="recommendations">
+                <h2>Recommended Animes</h2>
+
+                <div class="sort-container">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" onchange="sortMovies()">
+                        <option value=""></option>
+                        <option value="az">Sort from A-Z</option>
+                        <option value="za">Sort from Z-A</option>
+                    </select>
+                </div>
+
+
+                <div class="movies-container">
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/thewindrises.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/thewindrises.html')">
+                        <img src="../Coding/image/anime img/windrisesver.avif" alt="The Wind Rises Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>The Wind Rises</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.8/10</p>
+                            <p><b>Rotten Tomatoes:</b> 88%</p>
+                            <p><b>Letterboxd:</b> 4.1/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Hayao_Miyazaki">Hayao Miyazaki</a></p>
+                        <a href="../Coding/media details/Anime HTML/thewindrises.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/thewindrises.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/yourname.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/yourname.html')">
+                        <img src="../Coding/image/anime img/yrnamever.avif" alt="Your Name Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Your Name</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.4/10</p>
+                            <p><b>Rotten Tomatoes:</b> 98%</p>
+                            <p><b>Letterboxd:</b> 4.9/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Makoto_Shinkai">Makoto Shinkai</a></p>
+                        <a href="../Coding/media details/Anime HTML/yourname.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/yourname.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/dunk.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/dunk.html')">
+                        <img src="../Coding/image/anime img/dunkver.avif" alt="The First Slam Punk" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>The First Slam Dunk</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 9/10</p>
+                            <p><b>Rotten Tomatoes:</b>84%</p>
+                            <p><b>Letterboxd:</b>4.0/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="Takehiko Inoue">Takehiko Inoue</a></p>
+                        <a href="../Coding/media details/Anime HTML/dunk.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/dunk.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/boyandheron.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/boyandheron.html')">
+                        <img src="../Coding/image/anime img/boyandheronver.avif" alt="The Boy and The Heron Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>The Boy and The Heron</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.3/10</p>
+                            <p><b>Rotten Tomatoes:</b> 96%</p>
+                            <p><b>Letterboxd:</b> 3.9/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Hayao_Miyazaki">Hayao Miyazaki</a>
+                        </p>
+                        <a href="../Coding/media details/Anime HTML/boyandheron.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/boyandheron.html')">Click For More</a>
+                    </div>
+                </div>
+
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/bubble.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/bubble.html')">
+                        <img src="../Coding/image/anime img/bubblever.avif" alt="Bubble Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Bubble</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 6.4/10</p>
+                            <p><b>Rotten Tomatoes:</b> 52%</p>
+                            <p><b>Letterboxd:</b> 3.2/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Tetsur%C5%8D_Araki">Tetsurō Araki</a></p>
+                        <a href="../Coding/media details/Anime HTML/bubble.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/bubble.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/marnie.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/marnie.html')">
+                        <img src="../Coding/image/anime img/marniever.avif" alt="When Marnie Was There Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>When Marnie Was There</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.6/10</p>
+                            <p><b>Rotten Tomatoes:</b> 92%</p>
+                            <p><b>Letterboxd:</b> 3.9/5</p>
+                        </div>
+                        <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <a href="../Coding/media details/Anime HTML/marnie.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/marnie.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/oceanwaves.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/oceanwaves.html')">
+                        <img src="../Coding/image/anime img/oceanwavesver.avif" alt="Ocean Waves Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Ocean Waves</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 6.6/10</p>
+                            <p><b>Rotten Tomatoes:</b> 89%</p>
+                            <p><b>Letterboxd:</b> 3.1/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                            <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Tomomi_Mochizuki">Tomomi Mochizuki</a></p>
+                        <a href="../Coding/media details/Anime HTML/oceanwaves.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/oceanwaves.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/shinchan.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/shinchan.html')">
+                        <img src="../Coding/image/anime img/shinchanver.avif" alt="Crayon Shin-chan: Intense Battle! Robo Dad Strikes Back Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Crayon Shin-chan: Intense Battle! Robo Dad Strikes Back</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.2/10</p>
+                            <p><b>Rotten Tomatoes:</b> -</p>
+                            <p><b>Letterboxd:</b> 3.6/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                            <p><strong>Director:</strong>
+                            <a href="https://www.animenewsnetwork.com/encyclopedia/people.php?id=1923">Wataru Takahashi</a></p>
+                        <a href="../Coding/media details/Anime HTML/shinchan.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/shinchan.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/suzume.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/suzume.html')">
+                        <img src="../Coding/image/anime img/suzumever.avif" alt="Suzume Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Suzume</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.6/10</p>
+                            <p><b>Rotten Tomatoes:</b> 96%</p>
+                            <p><b>Letterboxd:</b> 3.8/5</p>
+                        </div>
+                            <p><strong>Country: </strong><a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Makoto_Shinkai">Makoto Shinkai</a></p>
+                        <a href="../Coding/media details/Anime HTML/suzume.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/suzume.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Anime HTML/weatheringwithyou.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/weatheringwithyou.html')">
+                        <img src="../Coding/image/anime img/weatheringver.avif" alt="Weathering With You Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>Weathering With You</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.5/10</p>
+                            <p><b>Rotten Tomatoes:</b> 91%</p>
+                            <p><b>Letterboxd:</b> 3.7/5</p>
+                        </div>
+                            <p><strong>Country: </strong><a href="https://en.wikipedia.org/wiki/Japan">Japan</a></p>
+                        <p><strong>Director:</strong>
+                            <a href="https://en.wikipedia.org/wiki/Makoto_Shinkai">Makoto Shinkai</a></p>
+                        <a href="../Coding/media details/Anime HTML/weatheringwithyou.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Anime HTML/weatheringwithyou.html')">Click For More</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="home.html">
+                        <img class="logo" src="../Coding/image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="home.html">Home Page</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../Coding/image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../Coding/image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+    
+        <script src="../Coding/js/search.js"></script>
+        <script src="../Coding/js/username.js"></script>
+        <script src="../Coding/js/movies_cartoon_anime.js"></script>
+
+    </body>
+</html>

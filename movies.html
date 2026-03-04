@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AuraTheatre - Movies</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Coding/css/Header.css">
+        <link rel="stylesheet" href="../Coding/css/Footer.css">
+        <link rel="stylesheet" href="../Coding/css/media.css">
+    </head>
+    <body>
+        <header class="header-background">
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <!-- Logo + Name -->
+                <div class="nav-1">
+                    <a href="home.html" class="logo">
+                        <img src="../Coding/image/icon img/logo.png" alt="AuraTheatre" height="60px">
+                    </a>
+                    <a href="home.html">
+                        <p>AuraTheatre</p>
+                    </a>
+                </div>
+
+                <!-- Search bar -->
+                <div class="nav-2">
+                    <input type="text" id="searchBar" placeholder="Search here">
+                    <button onclick="searchSite()" id="searchBtn">
+                        <img src="../Coding/image/icon img/Search Icon.png" alt="search icon" style="width: 18px; object-fit: contain;">
+                    </button>
+                </div>
+
+                <!-- Page links -->
+                <div class="nav-3">
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="cartoon.html">Cartoon</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                    </ul>
+                </div>
+
+                <!-- User section -->
+                <div class="nav-4">
+                    <div class="user-login">
+                        <img src="../Coding/image/icon img/User Icon.png" alt="UserIcon" style="width: 40px">
+                    </div>
+                    <span id="usernameText">Username</span>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+            <!--slideshow-->
+            <div class="slideshow-container">
+
+                <div class="slide fade">
+                    <img src="../Coding/image/movies img/lalaland.png" onclick="goToMovie('../Coding/media details/Movies HTML/LaLaLand.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/movies img/1900.jpg" onclick="goToMovie('../Coding/media details/Movies HTML/1900.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/movies img/interstella.webp" onclick="goToMovie('Interstellar.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/movies img/truman.jpg" onclick="goToMovie('../Coding/media details/Movies HTML/truman.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/movies img/starwars.jpg" onclick="goToMovie('../Coding/media details/Movies HTML/starwars.html')" style="cursor:pointer;">
+                </div>
+
+                <div class="slide fade">
+                    <img src="../Coding/image/movies img/spiderman.jpg" onclick="goToMovie('../Coding/media details/Movies HTML/spiderman.html')" style="cursor:pointer;">
+                </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="manualSlide(-1)">&#10094;</a>
+                <a class="next" onclick="manualSlide(1)">&#10095;</a>
+
+            </div>
+
+            <!--movie recommendation-->
+            <section class="recommendations">
+            <h2>Recommended Movies</h2>
+
+            <div class="sort-container">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" onchange="sortMovies()">
+                        <option value=""></option>
+                        <option value="az">Sort from A-Z</option>
+                        <option value="za">Sort from Z-A</option>
+                    </select>
+                </div>
+
+            <div class="movies-container">
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/LaLaLand.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/LaLaLand.html')">
+                        <img src="../Coding/image/movies img/lalalandver.avif" alt="La La Land Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>La La Land</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.0/10</p>
+                            <p><b>Rotten Tomatoes:</b> 91%</p>
+                            <p><b>Letterboxd:</b> 4.1/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                            <p><strong>Director:</strong> 
+                                <a href="https://en.wikipedia.org/wiki/Damien_Chazelle">Damien Chazelle</a></p>
+                            <a href="../Coding/media details/Movies HTML/LaLaLand.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/LaLaLand.html')">Click For More</a>
+                        </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/1900.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/1900.html')">
+                        <img src="../Coding/image/movies img/1900ver.avif" alt="The Legend of 1900 Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>The Legend of 1900</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.0/10</p>
+                            <p><b>Rotten Tomatoes:</b> 58%</p>
+                            <p><b>Letterboxd:</b> 4.0/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Italy">Italy</a></p>
+                            <p><strong>Director: </strong>
+                                <a href="https://en.wikipedia.org/wiki/Giuseppe_Tornatore">Giuseppe Tornatore</a></p>
+                        <a href="../Coding/media details/Movies HTML/1900.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/1900.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/greatgatsby.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/greatgatsby.html')">
+                        <img src="../Coding/image/movies img/greatgatsbyver.avif" alt="The Great Gatsby Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                        <h3>The Great Gatsby</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 7.2/10</p>
+                            <p><b>Rotten Tomatoes:</b> 48%</p>
+                            <p><b>Letterboxd:</b> 3.4/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/Australia">Australia</a>; <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                            <p><strong>Director: </strong>
+                                <a href="https://en.wikipedia.org/wiki/Baz_Luhrmann">Baz Luhrmann</a></p>
+                        <a href="../Coding/media details/Movies HTML/greatgatsby.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/greatgatsby.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/interstellar.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/interstellar.html')">
+                        <img src="../Coding/image/movies img/interstellaver.avif" alt="Interstellar Poster" class="movie-poster">
+                    </a>
+                    <div class="movie-info">
+                    <h3>Interstellar</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.7/10</p>
+                            <p><b>Rotten Tomatoes:</b> 73%</p>
+                            <p><b>Letterboxd:</b> 4.4/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a>; <a href="https://en.wikipedia.org/wiki/United_Kingdom">United Kingdom</a></p>
+                            <p><strong>Director: </strong>
+                                <a href="https://en.wikipedia.org/wiki/Christopher_Nolan">Christopher Nolan</a></p>
+                        <a href="../Coding/media details/Movies HTML/interstellar.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/interstellar.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/joker.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/joker.html')">
+                        <img src="../Coding/image/movies img/jokerver.avif" alt="Joker Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>Joker</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.3/10</p>
+                            <p><b>Rotten Tomatoes:</b> 68%</p>
+                            <p><b>Letterboxd:</b> 3.8/5</p>
+                        </div>
+                            <p><strong>Region:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                            <p><strong>Director: </strong>
+                                <a href="https://en.wikipedia.org/wiki/Todd_Phillips">Todd Phillips</a></p>
+                        <a href="../Coding/media details/Movies HTML/joker.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/joker.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/sunset.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/sunset.html')">
+                        <img src="../Coding/image/movies img/sunsetver.avif" alt="Before Sunset Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>Before Sunset</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.1/10</p>
+                            <p><b>Rotten Tomatoes:</b> 94%</p>
+                            <p><b>Letterboxd:</b> 4.3/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a>; <a href="https://en.wikipedia.org/wiki/France">France</a></p>
+                            <p><strong>Director: </strong>
+                            <a href="https://en.wikipedia.org/wiki/Richard_Linklater">Richard Linklater</a></p>
+                        <a href="../Coding/media details/Movies HTML/sunset.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/sunset.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/trumanshow.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/trumanshow.html')">
+                        <img src="../Coding/image/movies img/trumanver.avif" alt="The Truman Show Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>The Truman Show</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.2/10</p>
+                            <p><b>Rotten Tomatoes:</b> 94%</p>
+                            <p><b>Letterboxd:</b> 4.2/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                            <p><strong>Director: </strong>
+                            <a href="https://en.wikipedia.org/wiki/Peter_Weir">Peter Lindsay Weir</a></p>
+                        <a href="../Coding/media details/Movies HTML/trumanshow.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/trumanshow.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/lordofrings.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/lordofrings.html')">
+                        <img src="../Coding/image/movies img/lofver.avif" alt="The Lord of the Rings Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>The Lord of the Rings: The Return of the King</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 9.0/10</p>
+                            <p><b>Rotten Tomatoes:</b> 94%</p>
+                            <p><b>Letterboxd:</b> 4.5/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/New_Zealand">New Zealand</a>; <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                            <p><strong>Director: </strong>
+                            <a href="https://en.wikipedia.org/wiki/Peter_Jackson">Peter Jackson</a></p>
+                        <a href="../Coding/media details/Movies HTML/lordofrings.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/lordofrings.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/starwars.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/starwars.html')">
+                        <img src="../Coding/image/movies img/starwarsver.avif" alt="Star Wars: Episode V The Empire Strikes Back Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>Star Wars: Episode VII: The Force Awakens</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 9.1/10</p>
+                            <p><b>Rotten Tomatoes:</b> 95%</p>
+                            <p><b>Letterboxd:</b> 4.6/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                            <p><strong>Director: </strong>
+                            <a href="https://en.wikipedia.org/wiki/Irvin_Kershner">Irvin Kershner</a></p>
+                        <a href="../Coding/media details/Movies HTML/starwars.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/starwars.html')">Click For More</a>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <a href="../Coding/media details/Movies HTML/spiderman.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/spiderman.html')">
+                        <img src="../Coding/image/movies img/spidermanver.avif" alt="Spider-man: No Way Home Poster" class="movie-poster">
+                    </a>
+                <div class="movie-info">
+                    <h3>Spider-man: No Way Home</h3>
+                        <div class="rating-box">
+                            <p class="rating-title">Ratings</p>
+                            <p><b>IMDb:</b> 8.2/10</p>
+                            <p><b>Rotten Tomatoes:</b> 93%</p>
+                            <p><b>Letterboxd:</b> 3.8/5</p>
+                        </div>
+                            <p><strong>Country:</strong> <a href="https://en.wikipedia.org/wiki/United_States">United States</a></p>
+                            <p><strong>Director: </strong>
+                            <a href="https://en.wikipedia.org/wiki/Jon_Watts">Jonathan Watts</a></p>
+                        <a href="../Coding/media details/Movies HTML/spiderman.html" onclick="event.preventDefault(); goToMovie('../Coding/media details/Movies HTML/spiderman.html')">Click For More</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <nav class="fcontainer">
+                <!-- Logo -->
+                <div class="flogo">
+                    <a href="home.html">
+                        <img class="logo" src="../Coding/image/icon img/logo.png" alt="AuraTheatre Logo" height="60px">
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div class="flinks">
+                    <ul>
+                        <li><a href="home.html">Home Page</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact form.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="finfo">
+                    <p class="flocation"><b>Location:</b></p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/dP5aMybjrsxuV8Kw6" target="_blank">
+                            <p>5, Jalan Universiti, Bandar Sunway, <br>47500 Petaling Jaya, Selangor</p>
+                        </a> 
+                    </p>
+                </div>
+            </nav>
+
+            <!-- Social media -->
+            <div class="flwus">
+                <p>Follow Us!</p>
+                <div class="socialicon">
+                    <div class="instagram-icon">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                        <img src="../Coding/image/icon img/Instagram Icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="facebook-icon">
+                        <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="../Coding/image/icon img/Facebook Icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="fcopyright"><i>&copy; 2025 AuraTheatre. All rights reserved.</i></p>
+        </footer>
+
+        <script src="../Coding/js/search.js"></script>
+        <script src="../Coding/js/username.js"></script>
+        <script src="../Coding/js/movies_cartoon_anime.js"></script>
+
+    </body>
+</html>
